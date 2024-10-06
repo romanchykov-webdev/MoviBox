@@ -1,0 +1,23 @@
+npx create-expo-app ./            //установка в туже папку
+
+npm install @react-navigation/native
+
+--nativewind
+npm install nativewind
+npm install --save-dev tailwindcss@3.3.2
+
+--icons
+npm i react-native-heroicons
+npm i react-native-heroicons react-native-svg
+
+--carousel
+npm install --save react-native-snap-carousel
+
+--gradient
+npm i expo-linear-gradient
+
+-native-progress             https://www.npmjs.com/package/react-native-progress
+npm i react-native-progress
+
+--axios
+npm install axios
