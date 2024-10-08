@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.faram.MoviBox"
     },
     "web": {
       "bundler": "metro",
@@ -31,7 +32,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1f1e16cf-3ff4-4fda-9968-8bdfee36bb8b"
+      }
     }
-
   }
 }

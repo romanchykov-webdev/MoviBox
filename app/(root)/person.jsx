@@ -20,9 +20,9 @@ import MovieList from "../../components/movieList";
 import LoadingScreen from "../../components/loading";
 import {fetchPersonDetails, fetchPersonInfo, fetchPersonMovies, image342, image500} from "../../api/moviedb";
 
-var {width, height} = Dimensions.get("window");
+const {width, height} = Dimensions.get("window");
 const ios = Platform.OS === 'ios'
-const verticalMargin = ios ? "" : "my-3"
+const verticalMargin = ios ? "" : "my-5"
 
 const Person = () => {
 

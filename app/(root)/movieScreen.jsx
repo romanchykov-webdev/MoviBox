@@ -23,9 +23,9 @@ import MovieList from "../../components/movieList";
 import LoadingScreen from "../../components/loading";
 import {fetchMovieCredits, fetchMovieDetails, fetchMovieSimilar, image500} from "../../api/moviedb";
 
-var {width, height} = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 const ios = Platform.OS === 'ios';
-const topMargin = ios ? '' : "mt-3"
+const topMargin = ios ? "" : "my-5"
 
 const MovieScreen = () => {
 
@@ -125,7 +125,7 @@ const MovieScreen = () => {
         <ScrollView
             showsVerticalScrollIndicator={false}
             contentContainerStyle={{paddingBottom: 20}}
-            className="flex-1 "
+            className={`flex-1 ${ios ? "mb-2" : "mb-5 mt-5"}`}
             style={themeStyles.bgColorTheme}
         >
 

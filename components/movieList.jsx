@@ -15,7 +15,7 @@ import {images} from '../constants';
 import {image185} from "../api/moviedb";
 
 
-var {width, height} = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
 const MovieList = ({title, data, hiddenSeeAll}) => {
 

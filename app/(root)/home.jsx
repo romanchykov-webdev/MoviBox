@@ -21,7 +21,8 @@ import {router} from "expo-router";
 import LoadingScreen from "../../components/loading";
 import {fetchTopRatedMovies, fetchTrendingMovies, fetchUpcomingMovies} from "../../api/moviedb";
 
-const ios = Platform.OS === 'ios';
+const ios = Platform.OS === 'ios'
+const verticalMargin = ios ? "" : "my-5"
 
 const Home = () => {
 
@@ -155,7 +156,7 @@ const Home = () => {
         <View className="flex-1"
               style={{backgroundColor: themeStyles.bgColorTheme.backgroundColor}}
         >
-            <SafeAreaView className={ios ? "-mb-2" : "mb-3"}>
+            <SafeAreaView className={ios ? "mb-2" : "mb-5 mt-5"}>
                 <StatusBar style={colorScheme === 'dark' ? "light" : "dark"}/>
 
                 {/* search bar and logo */}

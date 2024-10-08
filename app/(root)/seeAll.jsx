@@ -11,7 +11,7 @@ import {
     Platform
 } from 'react-native';
 import {getStyles} from "../../theme";
-import {useLocalSearchParams} from "expo-router";
+import {router, useLocalSearchParams} from "expo-router";
 import GoToBack from "../../components/goToBack";
 import {HeartIcon} from "react-native-heroicons/solid";
 import Loading from "../../components/loading";
@@ -82,8 +82,12 @@ const SeeAll = () => {
     // fetch
 
     // onPress
-    const handlerMorInfo = () => {
-        console.log('handlerMorInfo')
+    const handlerMorInfo = (item) => {
+        console.log('handlerMorInfo',item)
+        router.push({
+            pathname:"/(root)/movieScreen",
+            params:{movieData:JSON.stringify(item)}
+        })
     }
     // onPress
 
@@ -131,7 +135,7 @@ const SeeAll = () => {
                                     seeAllData?.map((item, index) => (
                                         <TouchableOpacity
                                             key={index}
-                                            onPress={handlerMorInfo}
+                                            onPress={()=>handlerMorInfo(item.id)}
                                             className="
                                             rounded-3xl
                                             {/*border-2*/}
