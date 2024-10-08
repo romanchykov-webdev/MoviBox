@@ -1,5 +1,7 @@
 npx create-expo-app ./            //установка в туже папку
 
+npm install lodash  for debounce
+
 npm install @react-navigation/native
 
 --nativewind
@@ -12,6 +14,7 @@ npm i react-native-heroicons react-native-svg
 
 --carousel
 npm install --save react-native-snap-carousel
+npm install --save react-native-snap-carousel
 
 --gradient
 npm i expo-linear-gradient
@@ -21,3 +24,5 @@ npm i react-native-progress
 
 --axios
 npm install axios
+
+npm install react-native-reanimated
